@@ -25,8 +25,8 @@ string commonPrefix (string arr[], int n)
 }
 int main()
 {
-	string arr[] = {"geeksforgeeks", "geeks",
-					"geek", "geezer"};
+	string arr[] = {"priyankamyonlylove", "priya",
+					"priyahugar", "priyankahugar"};
 	int n = sizeof(arr) / sizeof(arr[0]);
 
 	string ans = commonPrefix(arr, n);
