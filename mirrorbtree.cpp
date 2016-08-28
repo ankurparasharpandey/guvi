@@ -9,8 +9,7 @@ struct node
 struct node* newNode(int data)
 
 {
-struct node* node = (struct node*)
-					malloc(sizeof(struct node));
+struct node* node = (struct node*)malloc(sizeof(struct node));
 node->data = data;
 node->left = NULL;
 node->right = NULL;
@@ -24,13 +23,9 @@ if (node==NULL)
 else
 {
 	struct node* temp;
-	
-	/* do the subtrees */
 	mirror(node->left);
 	mirror(node->right);
-
-	/* swap the pointers in this node */
-	temp	 = node->left;
+	temp= node->left;
 	node->left = node->right;
 	node->right = temp;
 }
